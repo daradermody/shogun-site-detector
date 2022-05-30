@@ -1,0 +1,24 @@
+{
+  "name": "Shogun Store Detector",
+  "action": {
+    "default_icon": "icons/default16.png",
+    "default_title": "Detects if you are on a site built with Shogun"
+  },
+  "manifest_version": 3,
+  "version": "0.1",
+  "description": "Detects if the site was created using Shogun Frontend or Shogun Page Builder",
+  "permissions": [
+    "webNavigation",
+    "scripting",
+    "tabs",
+    "http://*/",
+    "https://*/"
+  ],
+  "host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
